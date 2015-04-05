@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Helpeachother</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_chat">聊天窗口：</string>
+    <string name="title_activity_file_transmit">文件传送</string>
+    <string name="title_activity_file_selecter">文件选择</string>
+    <string name="title_activity_device_detail">DeviceDetailActivity</string>
+    <string name="title_activity_about">关于</string>
+</resources>

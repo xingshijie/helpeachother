@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item
+        android:id="@+id/action_discover"
+        android:icon="@drawable/ic_action_discover"
+        android:title="discover"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/action_disconnect"
+        android:icon="@drawable/cancel"
+        android:title="退出wifi-direct"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_file"
+        android:title="文件传送"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_myDevice"
+        android:title="我的设备"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_about"
+        android:title="关于"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_stop_discovery"
+        android:title="停止wifi-direct发现"
+        app:showAsAction="never"/>
+</menu>

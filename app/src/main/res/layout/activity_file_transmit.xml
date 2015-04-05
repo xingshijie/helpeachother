@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.xingshijie.helpeachother.FileTransmitActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开服务器"
+        android:id="@+id/button_open_server"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开文件"
+        android:id="@+id/button_file_select"
+        android:layout_above="@+id/textView_server"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择要打开的文件"
+        android:id="@+id/textView_file_path"
+        android:layout_above="@+id/button_file_select"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请打开服务器"
+        android:id="@+id/textView_server"
+        android:layout_above="@+id/button_open_server"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:id="@+id/imageView_QR_code"
+        android:src="@drawable/qr_code"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭服务器"
+        android:id="@+id/button_close_server"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="如果使用Wifi-Direct连接扫描此图片，否则点击切换"
+        android:id="@+id/textView_qrCode_content"
+        android:layout_above="@+id/imageView_QR_code" />
+
+</RelativeLayout>

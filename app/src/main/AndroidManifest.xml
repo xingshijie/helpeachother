@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xingshijie.helpeachother" >
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".WifiDirectBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+
+        <service
+            android:name=".service.WifiDirectService"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xingshijie.helpeachother.MainActivity" />
+        </activity>
+
+        <service
+            android:name=".service.FileTransmitIntentService"
+            android:exported="false" >
+        </service>
+
+        <activity
+            android:name=".FileTransmitActivity"
+            android:label="@string/title_activity_file_transmit"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name=".FileSelecterActivity"
+            android:label="@string/title_activity_file_selecter" >
+        </activity>
+        <activity
+            android:name=".DeviceDetailActivity"
+            android:label="@string/title_activity_device_detail" >
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+
+        <service
+            android:name=".service.WifiP2pDiscoveryService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+    </application>
+
+</manifest>
